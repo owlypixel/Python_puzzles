@@ -3,7 +3,7 @@
 # a = [1, 4, 6, 2, 0, -3]
 # print(a[-1])
 
-# Find the secont to last element of a list.
+# Find the second to last element of a list.
 
 # a = [1, 4, 6, 2, 0, -3]
 # print(a[-2])
@@ -50,14 +50,22 @@
 
 #  Eliminate !CONSECUTIVE! duplicates from the list.
 
-t = [1, 1, 2, 3, 3, -2, 1, 1, 1, 1, 2, 5, 6, 7, 8, -2]
+# t = [1, 1, 2, 3, 3, -2, 1, 1, 1, 1, 2, 5, 6, 7, 8, -2]
 
-def conDedup(lst):
-	result = []
-	sample = lst[0]
-	for i in lst:
-		if(i != sample):
-			result.append(i)
-			sample = i
-	return result
-print(conDedup(t))
+# def conDedup(lst):
+# 	result = []
+# 	sample = lst[0]
+# 	for i in lst:
+# 		if(i != sample):
+# 			result.append(i)
+# 			sample = i
+# 	return result
+# print(conDedup(t))
+
+# Duplicate the elements of a list.
+
+# t = [1, 2, 3, -2, 22, 51, 6, 87, 8, -2]
+# a = []
+# for i in t:
+#     a.extend([i,i])
+# print(a)
