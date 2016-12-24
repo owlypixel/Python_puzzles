@@ -33,3 +33,31 @@
 
 # a = [9, 8, 6, 8, 9]
 # print(a == a[::-1])
+
+# Flatten a nested list structure.
+
+# list1 = [[1, 2, 3], [[0,-3], 5, 6], [7], [8, 9]]
+
+# def flatten(lst):
+# 	result = []
+# 	for l in lst:
+# 		if(type(l) == list):
+# 			result.extend(flatten(l))
+# 		else:
+# 			result.append(l)
+# 	return result
+# print(flatten(list1))
+
+#  Eliminate !CONSECUTIVE! duplicates from the list.
+
+t = [1, 1, 2, 3, 3, -2, 1, 1, 1, 1, 2, 5, 6, 7, 8, -2]
+
+def conDedup(lst):
+	result = []
+	sample = lst[0]
+	for i in lst:
+		if(i != sample):
+			result.append(i)
+			sample = i
+	return result
+print(conDedup(t))
