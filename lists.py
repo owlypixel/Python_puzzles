@@ -51,7 +51,7 @@
 #  Eliminate !CONSECUTIVE! duplicates from the list.
 
 # t = [1, 1, 2, 3, 3, -2, 1, 1, 1, 1, 2, 5, 6, 7, 8, -2]
-
+#
 # def conDedup(lst):
 # 	result = []
 # 	sample = lst[0]
@@ -71,7 +71,7 @@
 # print(a)
 
 # Insert an element at a given position into a list.
-
+#
 # pos = 3
 # el = 8
 # l1 = [1, 2, 3, -2, 22, 51]
@@ -83,3 +83,9 @@
 #     print(result)
 #
 # ins_in_pos(l1, el, pos)
+
+# Create a list containing all integers within a given range.
+
+# start = 5
+# end = 32
+# print(list(range(start, end)))
