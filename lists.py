@@ -69,3 +69,17 @@
 # for i in t:
 #     a.extend([i,i])
 # print(a)
+
+# Insert an element at a given position into a list.
+
+# pos = 3
+# el = 8
+# l1 = [1, 2, 3, -2, 22, 51]
+#
+# def ins_in_pos(list, el, pos):
+#     result = list[:(pos - 1)]
+#     result.append(el)
+#     result.extend(list[pos - 1:])
+#     print(result)
+#
+# ins_in_pos(l1, el, pos)
