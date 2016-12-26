@@ -1,0 +1,9 @@
+1) Python is all about dictionaries
+ - it is a foundation for a custom classes
+ - related to json where you store your functions and modules
+ - if you have large datastructures and you need to lookup something there - use dict
+
+
+ Questions: 
+ - What is a dictionary comprehension?
+ - What is dunder?
