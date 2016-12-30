@@ -89,3 +89,54 @@
 # start = 5
 # end = 32
 # print(list(range(start, end)))
+
+# ---------------------------------------------------------------
+# filter the list of inventors for those who lived during 1500's
+inventors = [
+	{'first': 'Albert', 'last': 'Einstein', 'year': 1879, 'passed': 1955},
+	{'first': 'Isaac', 'last': 'Newton', 'year': 1643, 'passed': 1727},
+	{'first': 'Galileo', 'last': 'Galilei', 'year': 1564, 'passed': 1642},
+	{'first': 'Marie', 'last': 'Curie', 'year': 1867, 'passed': 1934},
+	{'first': 'Johannes', 'last': 'Kepler', 'year': 1571, 'passed': 1630},
+	{'first': 'Nicolaus', 'last': 'Copernicus', 'year': 1473, 'passed': 1543},
+];
+
+# def func(item):
+# 	if(item['year'] >= 1500 and item['year'] <= 1600):
+# 		return True
+
+# result = filter(func, inventors)
+# print(list(result))
+
+# Get an array of inventors first and last names
+
+# def func(item):
+# 	return item['first'] + ' ' + item['last']
+
+# result = map(func, inventors)
+# print(list(result))
+
+# Sort the inventors by birthdate oldest to youngest
+
+# def byAge(inventor):
+# 	return inventor['year']
+
+# sorted1 = sorted(inventors, key=byAge)
+# print(sorted1)
+
+# How many years did all the inventors live?
+
+# from functools import reduce
+# def func(tmp, cur):
+# 	return tmp + (cur['passed'] - cur['year'])
+
+# totalYears = reduce(func, inventors, 0)
+# print(totalYears)
+
+# Sort the inventors by years lived  -  NOT SOLVED!!!!!!!!!!!!!!!!!!!!!
+# def byAge(a, b):
+# 	last = a['passed'] - a['year']
+# 	next = b['passed'] - b['year']
+# 	return -1 if last > next else 1
+# oldest = sorted(inventors, key=byAge)
+# print(oldest)

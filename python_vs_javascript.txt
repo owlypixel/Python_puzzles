@@ -1,0 +1,5 @@
+A list of some differences in JS and Python to remember
+________________________________________________________
+
+1) && - and
+2) cond ? a : b  -  a if condition else b
