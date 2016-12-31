@@ -101,6 +101,12 @@ inventors = [
 	{'first': 'Nicolaus', 'last': 'Copernicus', 'year': 1473, 'passed': 1543},
 ];
 
+boulevards = ["Boulevard de l'Amiral-Bruix", "Boulevard Strasbourg", "Boulevard des Capucines", "Boulevard la Chapelle", "Boulevard de Clichy", "Boulevard de lital", "Boulevard des Italiens", "Boulevard la Madeleine", "Boulevard de Magenta", "Boulevard Rochechouart", "Boulevard Sbastopol", "Boulevard la Zone"]
+
+guitarists = ['Jason, Becker', 'Marty, Friedman', 'Paul, Gilbert', 'Chick, Corea', 'Aldi, Meola', 'John, McLauglin', 'Chris, Impelliterri', 'Yngwie, Malmsteen', 'Randy, Rhoads', 'David, Micic', 'Paul, Wardingham']
+
+guitars = ['Ibanez', 'Fender', 'Suhr', 'Mayones', 'Suhr', 'Rickenbecker', 'Caparison', 'Laguna', 'Fender', 'Suhr', 'Ibanez'];
+
 # def func(item):
 # 	if(item['year'] >= 1500 and item['year'] <= 1600):
 # 		return True
@@ -140,3 +146,35 @@ inventors = [
 # 	return -1 if last > next else 1
 # oldest = sorted(inventors, key=byAge)
 # print(oldest)
+
+# from a list of boulevards select those that contain 'de' anywhere in the name
+
+# variant 1
+# def func(a):
+# 	return 'de' in a
+# de = filter(func, boulevards)
+# print(list(de))
+
+# variant 2 - using lambda function
+# de = filter(lambda x: 'de' in x, boulevards)
+# print(list(de))
+
+# variant 3 - using list comprehension
+# de = [k for k in boulevards if 'de' in k]
+# print(list(de))
+
+# sort guitarists alphabetically by last name  -  NOT SOLVED!!!!!!!!!!!!!!!!!!!!!
+# def byLastName():
+
+# sorted1 = sorted(guitarists, key=byLastName)
+
+# sum up the instances of each guitar model
+
+# from functools import reduce
+# def func(tmp, cur):
+# 	if(not cur in tmp.keys()):
+# 		tmp[cur] = 0
+# 	tmp[cur] += 1
+# 	return tmp
+# result = reduce(func, guitars, {})
+# print(result)
