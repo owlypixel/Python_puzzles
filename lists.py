@@ -139,11 +139,9 @@ guitars = ['Ibanez', 'Fender', 'Suhr', 'Mayones', 'Suhr', 'Rickenbecker', 'Capar
 # totalYears = reduce(func, inventors, 0)
 # print(totalYears)
 
-# Sort the inventors by years lived  -  NOT SOLVED!!!!!!!!!!!!!!!!!!!!!
-# def byAge(a, b):
-# 	last = a['passed'] - a['year']
-# 	next = b['passed'] - b['year']
-# 	return -1 if last > next else 1
+# Sort the inventors by years lived 
+# def byAge(a):
+# 	return a['passed'] - a['year']
 # oldest = sorted(inventors, key=byAge)
 # print(oldest)
 
