@@ -5,3 +5,4 @@ ________________________________________________________
 2) cond ? a : b  -  a if condition else b
 3) !obj  -  not obj
 4) ++  -  += 1 
+5) true - True

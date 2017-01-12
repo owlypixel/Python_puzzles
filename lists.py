@@ -107,6 +107,20 @@ guitarists = ['Jason, Becker', 'Marty, Friedman', 'Paul, Gilbert', 'Chick, Corea
 
 guitars = ['Ibanez', 'Fender', 'Suhr', 'Mayones', 'Suhr', 'Rickenbecker', 'Caparison', 'Laguna', 'Fender', 'Suhr', 'Ibanez'];
 
+comments = [
+	{'text': 'Love this!', 'id': 523423},
+	{'text': 'Super good', 'id': 823423},
+	{'text': 'You are the best', 'id': 2039842},
+	{'text': 'Nice Nice Nice!', 'id': 542328}
+];
+
+people = [
+	{'name': 'Wes', 'year': 1988},
+	{'name': 'Kait', 'year': 1986},
+	{'name': 'Irv', 'year': 1970},
+	{'name': 'Lux', 'year': 2015}
+];
+
 # def func(item):
 # 	if(item['year'] >= 1500 and item['year'] <= 1600):
 # 		return True
@@ -176,3 +190,15 @@ guitars = ['Ibanez', 'Fender', 'Suhr', 'Mayones', 'Suhr', 'Rickenbecker', 'Capar
 # 	return tmp
 # result = reduce(func, guitars, {})
 # print(result)
+
+# s at least one person 19?
+# import datetime
+# now = datetime.datetime.now()
+# isAdult = any(now.year - x['year'] >= 19 for x in people)
+# print(isAdult);
+
+# is everyone 19?
+# import datetime
+# now = datetime.datetime.now()
+# allAdults = all(now.year - x['year'] >= 19 for x in people)
+# print(allAdults)
