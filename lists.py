@@ -202,3 +202,11 @@ people = [
 # now = datetime.datetime.now()
 # allAdults = all(now.year - x['year'] >= 19 for x in people)
 # print(allAdults)
+
+# find the comment with the id 823423
+# comment = filter(lambda comment: comment['id'] == 823423, comments)
+# print(list(comment))
+
+# find the comment with the id 823423 and delete it 
+# comments = [c for c in comments if c['id'] != 823423]
+# print(comments)
